@@ -1,0 +1,53 @@
+.parent {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .video-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .video-container1 {
+    top: 0;
+    left: 0;
+  }
+  
+  .video-container2 {
+    top: 0;
+    right: 0;
+    .video-scaler {
+      transform: scale(1) translateX(-50%);
+    }
+  }
+  
+  .video-container3 {
+    bottom: 0;
+    left: 0;
+    .video-scaler {
+      transform: scale(1) translateY(-50%);
+    }
+  }
+  
+  .video-container4 {
+    bottom: 0;
+    right: 0;
+    .video-scaler {
+      transform: scale(1) translate(-50%, -50%);
+    }
+  }
+  
+  .video-scaler {
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    transform: scale(1);
+  }
+  iframe{
+    height: 100%;
+    width: 100%;
+  }
+  
